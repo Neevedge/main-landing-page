@@ -54,11 +54,11 @@ const Services = () => {
         </svg>
       ),
       title: "Mobile App Development",
-      subtitle: "Native & cross-platform expertise",
+      subtitle: "cross-platform expertise",
       description: "Our expert team creates powerful, feature-rich mobile applications that engage users and provide seamless experiences across all devices and platforms.",
       features: [
-        "Native iOS & Android Development",
-        "Cross-platform Solutions (Flutter/React Native)",
+        "Cross Platform & Android Development",
+        "Cross-platform Solutions (Kotlin/React Native)",
         "Mobile App UX/UI Design",
         "App Performance Optimization",
         "Backend & API Development",
@@ -73,7 +73,7 @@ const Services = () => {
         </svg>
       ),
       title: "UI/UX Design",
-      subtitle: "Award-winning design solutions",
+      subtitle: "Designing solutions",
       description: "We create intuitive, visually stunning designs that elevate your brand, enhance user engagement, and drive conversion through research-backed design methodologies.",
       features: [
         "User Research & Experience Strategy",
@@ -92,7 +92,7 @@ const Services = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
         </svg>
       ),
-      title: "Digital Marketing",
+      title: "Digital Marketing & Social Media Haandling",
       subtitle: "Data-driven growth strategies",
       description: "Our holistic digital marketing strategies drive measurable business growth through targeted campaigns, advanced analytics, and continuous optimization.",
       features: [
@@ -255,12 +255,12 @@ const Services = () => {
                 
                 {/* Stats cards */}
                 <div className="absolute -bottom-6 -right-6 bg-gradient-to-r from-gray-800 to-gray-900 p-4 rounded-lg border border-gray-700/50 shadow-xl w-40">
-                  <div className="text-2xl font-bold text-white mb-1">100+</div>
+                  <div className="text-2xl font-bold text-white mb-1">5+</div>
                   <div className="text-sm text-gray-400">{services[activeService].title} Projects</div>
                 </div>
                 
                 <div className="absolute -top-6 -left-6 bg-gradient-to-r from-gray-800 to-gray-900 p-4 rounded-lg border border-gray-700/50 shadow-xl w-40">
-                  <div className={`text-2xl font-bold bg-gradient-to-r ${services[activeService].gradient} bg-clip-text text-transparent mb-1`}>98%</div>
+                  <div className={`text-2xl font-bold bg-gradient-to-r ${services[activeService].gradient} bg-clip-text text-transparent mb-1`}>95%</div>
                   <div className="text-sm text-gray-400">Client Satisfaction</div>
                 </div>
               </div>
