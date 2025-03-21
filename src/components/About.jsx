@@ -5,7 +5,7 @@ const About = () => {
     { id: 3, value: '50+', label: 'Team Members' },
     { id: 4, value: '30+', label: 'Countries Served' }
   ];
-  
+
   const values = [
     {
       id: 1,
@@ -48,7 +48,7 @@ const About = () => {
       )
     }
   ];
-  
+
   return (
     <section id="about" className="py-20 bg-gray-900 text-white">
       <div className="container mx-auto px-4">
@@ -59,7 +59,7 @@ const About = () => {
             We're a team of passionate tech enthusiasts dedicated to creating innovative digital solutions.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
           {/* About Content */}
           <div>
@@ -67,16 +67,16 @@ const About = () => {
               Our Story
             </h3>
             <p className="text-gray-300 mb-6">
-              Founded in 2010, Neevedge started with a simple mission: to help businesses leverage technology to achieve their goals. What began as a small web development shop has evolved into a full-service tech agency with a global presence.
+              Back in 2025, a group of passionate students came together with a bold idea: to create a tech company that delivers top-notch solutions without breaking the bank. That’s how Neecedge was born, a company built from the ground up to empower clients with high-quality tech at affordable prices.
             </p>
             <p className="text-gray-300 mb-6">
-              Over the years, we've collaborated with startups, mid-sized businesses, and Fortune 500 companies, delivering cutting-edge solutions across various industries. Our team has grown to include experts in web and mobile development, UI/UX design, digital marketing, and emerging technologies like AI and machine learning.
+            Late-night coding and coffee chats turned into something big. We’ve partnered with small businesses, startups, and top brands, creating slick websites and robust apps. Our crew of developers, designers, and marketers keeps that student hustle alive.
             </p>
             <p className="text-gray-300">
-              Today, we continue to push the boundaries of what's possible in the digital realm, helping our clients transform their ideas into reality and stay ahead in an ever-evolving technological landscape.
+              Today, we’re proud to be one of the best in the game, keeping our promise to deliver exceptional quality at minimal cost. We’re here to turn our clients’ visions into reality, proving that great tech doesn’t need a hefty price tag - just a team that cares.
             </p>
           </div>
-          
+
           {/* Stats Grid */}
           <div className="grid grid-cols-2 gap-8">
             {stats.map((stat) => (
@@ -89,7 +89,7 @@ const About = () => {
             ))}
           </div>
         </div>
-        
+
         {/* Core Values */}
         <div className="mt-24">
           <div className="text-center mb-16">
@@ -98,7 +98,7 @@ const About = () => {
               These principles guide our work and define who we are as a company.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value) => (
               <div key={value.id} className="bg-gradient-to-r from-blue-600/5 to-purple-600/5 border border-gray-800 hover:border-blue-500/20 rounded-xl p-8 transition-all duration-300">
@@ -111,12 +111,12 @@ const About = () => {
             ))}
           </div>
         </div>
-        
+
         {/* CTA */}
         <div className="mt-24 text-center">
           <h3 className="text-2xl font-bold mb-6">Ready to work with us?</h3>
-          <a 
-            href="/#contact" 
+          <a
+            href="/#contact"
             className="inline-block px-8 py-3 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 hover:from-blue-500 hover:to-purple-500 text-white font-medium transition-all duration-300"
           >
             Get in Touch
