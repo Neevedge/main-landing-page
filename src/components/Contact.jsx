@@ -243,13 +243,14 @@ const Contact = () => {
                   <div>
                     <label htmlFor="phone" className="block text-gray-300 mb-2">Phone Number</label>
                     <input
+                      maxLength={14}
                       type="tel"
                       id="phone"
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
                       className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 text-white"
-                      placeholder="(123) 456-7890"
+                      placeholder="+91 9999988888"
                     />
                   </div>
                 </div>
