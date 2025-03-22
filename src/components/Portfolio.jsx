@@ -4,46 +4,52 @@ const Portfolio = () => {
   const [filter, setFilter] = useState('all');
 
   const projects = [
+    
     {
       id: 1,
-      title: 'Fintech Dashboard',
+      title: 'CodeCandy Code Snippet',
       category: 'web',
-      image: 'https://via.placeholder.com/600x400/1a1a2e/ffffff?text=Fintech+Dashboard',
-      tags: ['React', 'Tailwind CSS', 'Node.js'],
-      description: 'A modern dashboard for a financial technology company with real-time data visualization.'
+      image: '/pics/codecandy.png',
+      tags: ['React + vite', 'Firebase', 'Tailwind CSS'],
+      description: 'CodeCandy is a modern web application designed for developers to organize, manage, and share code snippets effortlessly.',
+      url:"https://codecandy.suraniharsh.codes/"
     },
     {
       id: 2,
-      title: 'E-commerce Mobile App',
-      category: 'mobile',
-      image: 'https://via.placeholder.com/600x400/0f3460/ffffff?text=E-commerce+App',
-      tags: ['React Native', 'Firebase', 'Redux'],
-      description: 'A full-featured e-commerce application with seamless checkout experience.'
+      title: 'AVB Shipping and logistic',
+      category: 'web',
+      image: '/pics/avbshipping.png',
+      tags: ['React', 'Tailwind CSS'],
+      description: 'AVBLogistic Company can be your one-stop shop for all your logistics and shipping needs',
+      url:"https://avbshipping.vercel.app"
     },
     {
       id: 3,
-      title: 'AI Content Generator',
-      category: 'ai',
-      image: 'https://via.placeholder.com/600x400/16213e/ffffff?text=AI+Content+Generator',
-      tags: ['Python', 'TensorFlow', 'Flask'],
-      description: 'An AI-powered content generation tool for marketing teams to create engaging copy.'
+      title: 'Advance Note Taking App UI',
+      category: 'ui',
+      image: '/pics/Notes.png',
+      tags: ['Figma', 'UI/UX Design'],
+      description: 'simplifies note-taking like never before! With just a tap, you can transcribe thoughts to text and even sync with your calendar. Designed to save time and boost productivity ',
+      url:"#",
     },
-    {
-      id: 4,
-      title: 'Healthcare Platform',
-      category: 'web',
-      image: 'https://via.placeholder.com/600x400/1a1a2e/ffffff?text=Healthcare+Platform',
-      tags: ['Angular', 'Node.js', 'MongoDB'],
-      description: 'A comprehensive healthcare platform connecting patients with doctors for telehealth consultations.'
-    },
-    {
-      id: 5,
-      title: 'Fitness Tracking App',
-      category: 'mobile',
-      image: 'https://via.placeholder.com/600x400/0f3460/ffffff?text=Fitness+App',
-      tags: ['Flutter', 'Firebase', 'BLoC'],
-      description: 'A fitness tracking application with workout plans, progress tracking, and social features.'
-    },
+    // {
+    //   id: 4,
+    //   title: 'Healthcare Platform',
+    //   category: 'web',
+    //   image: 'https://via.placeholder.com/600x400/1a1a2e/ffffff?text=Healthcare+Platform',
+    //   tags: ['Angular', 'Node.js', 'MongoDB'],
+    //   description: 'A comprehensive healthcare platform connecting patients with doctors for telehealth consultations.',
+    //   url:"#",
+    // },
+    // {
+    //   id: 5,
+    //   title: 'Fitness Tracking App',
+    //   category: 'mobile',
+    //   image: 'https://via.placeholder.com/600x400/0f3460/ffffff?text=Fitness+App',
+    //   tags: ['Flutter', 'Firebase', 'BLoC'],
+    //   description: 'A fitness tracking application with workout plans, progress tracking, and social features.',
+    //   url:"#",
+    // },
     // {
     //   id: 6,
     //   title: 'Smart Home System',
@@ -94,7 +100,7 @@ const Portfolio = () => {
                 ? 'bg-gradient-to-r from-purple-500 to-blue-500 text-white'
                 : 'bg-gray-800 text-gray-300 hover:bg-gray-700'
               }`}
-            onClick={() => setFilter('iot')}
+            onClick={() => setFilter('ui')}
           >
             UI/UX
           </button>
@@ -156,10 +162,11 @@ const Portfolio = () => {
                   ))}
                 </div>
                 <a
-                  href="#"
+                  target='_blank'
+                  href={project.url}
                   className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors"
                 >
-                  View Case Study
+                  Visit 
                   <svg
                     className="ml-2 w-4 h-4"
                     fill="none"

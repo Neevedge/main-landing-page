@@ -1,9 +1,9 @@
 const About = () => {
   const stats = [
-    { id: 1, value: '12+', label: 'Years of Experience' },
-    { id: 2, value: '150+', label: 'Projects Completed' },
-    { id: 3, value: '50+', label: 'Team Members' },
-    { id: 4, value: '30+', label: 'Countries Served' }
+    { id: 1, value: '2+', label: 'Years of Experience' },
+    { id: 2, value: '10+', label: 'Projects Completed' },
+    // { id: 3, value: '3', label: 'Team Members' },
+    // { id: 4, value: '1', label: 'Countries Served' }
   ];
 
   const values = [
