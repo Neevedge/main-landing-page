@@ -23,6 +23,13 @@ module.exports = {
         'float': 'float 6s ease-in-out infinite',
         'blob': 'blob 15s infinite alternate',
         'pulse-shadow': 'pulse-shadow 2s infinite',
+        'spin-slow-reverse': 'spin-reverse 20s linear infinite',
+        'spin-medium': 'spin 8s linear infinite',
+        'spin-medium-reverse': 'spin-reverse 12s linear infinite',
+        'pulse-slow': 'pulse 5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'float': 'float 6s ease-in-out infinite',
+        'float-complex': 'float-complex 12s ease-in-out infinite',
+        'particle': 'particle 15s ease-in-out infinite',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -45,6 +52,10 @@ module.exports = {
         'xs': '2px',
       },
       keyframes: {
+        'spin-reverse': {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(-360deg)' },
+        },
         float: {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-10px)' },
@@ -59,7 +70,25 @@ module.exports = {
           '0%': { transform: 'rotate(360deg)' },
           '100%': { transform: 'rotate(0deg)' },
         },
-      }
+        'float-complex': {
+          '0%': { transform: 'translateY(0) translateX(0) rotate(0deg)' },
+          '25%': { transform: 'translateY(-15px) translateX(10px) rotate(5deg)' },
+          '50%': { transform: 'translateY(-25px) translateX(0) rotate(0deg)' },
+          '75%': { transform: 'translateY(-15px) translateX(-10px) rotate(-5deg)' },
+          '100%': { transform: 'translateY(0) translateX(0) rotate(0deg)' },
+        },
+        'particle': {
+          '0%': { transform: 'scale(1) translateY(0) translateX(0)', opacity: '0' },
+          '10%': { opacity: '1' },
+          '50%': { transform: 'scale(1.5) translateY(-100px) translateX(50px)' },
+          '90%': { opacity: '0' },
+          '100%': { transform: 'scale(0.5) translateY(-200px) translateX(100px)', opacity: '0' },
+        },
+      },
+      transitionDelay: {
+        '1500': '1500ms',
+        '2000': '2000ms',
+      },
     },
   },
   plugins: [],
